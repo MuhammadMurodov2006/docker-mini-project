@@ -35,7 +35,7 @@ CREATE TABLE Timetable (
     level INT
 );
 
-NSERT INTO Timetable (course_name, day, time, room, level) VALUES
+INSERT INTO Timetable (course_name, day, time, room, level) VALUES
     ('Introduction to Political Theory', 'Wednesday', '11:30 AM - 01:50 PM', 'WebNet+', 1),
     ('Computer Programming II', 'Monday', '09:00 AM - 11:20 AM', 'North Hall Classrooms 114', 1),
     ('Public Speaking', 'Friday', '02:00 PM - 04:20 PM', 'North Hall Classrooms 408', 1),
@@ -58,7 +58,7 @@ CREATE TABLE Rooms (
     building_name VARCHAR(50)
 );
 
--INSERT INTO Rooms (room_name, building_name) VALUES
+INSERT INTO Rooms (room_name, building_name) VALUES
 ('--', 'Webnet+'),
 ('Room 114', 'North Hall'),
 ('Room 408', 'North Hall'),
