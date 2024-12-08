@@ -1,0 +1,39 @@
+CREATE TABLE Timetable (
+    course_id SERIAL PRIMARY KEY,
+    course_name VARCHAR(255),
+    day VARCHAR(50),
+    time VARCHAR(50),
+    room VARCHAR(50),
+    level INT
+);
+
+NSERT INTO Timetable (course_name, day, time, room, level) VALUES
+    ('Introduction to Political Theory', 'Wednesday', '11:30 AM - 01:50 PM', 'WebNet+', 1),
+    ('Computer Programming II', 'Monday', '09:00 AM - 11:20 AM', 'North Hall Classrooms 114', 1),
+    ('Public Speaking', 'Friday', '02:00 PM - 04:20 PM', 'North Hall Classrooms 408', 1),
+    ('Computer Languages', 'Tuesday', '11:30 AM - 01:50 PM', 'North Hall Classrooms 115', 1),
+    ('Operating Systems', 'Monday', '04:30 PM - 06:50 PM', 'North Hall Classrooms 304', 1);
+
+CREATE TABLE Students (
+    student_id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    level INT
+);
+-- Insert sample data into the Students table
+INSERT INTO Students (name, level) VALUES
+('Muhammad Murodov', 1);
+
+-- Example: Rooms Table (optional if you want to track rooms separately)
+CREATE TABLE Rooms (
+    room_id SERIAL PRIMARY KEY,
+    room_name VARCHAR(50),
+    building_name VARCHAR(50)
+);
+
+-INSERT INTO Rooms (room_name, building_name) VALUES
+('--', 'Webnet+'),
+('Room 114', 'North Hall'),
+('Room 408', 'North Hall'),
+('Room 115', 'North Hall'),
+('Room 304', 'North Hall');
+
