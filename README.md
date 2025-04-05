@@ -73,7 +73,7 @@ INSERT INTO Rooms (room_name, building_name) VALUES
 ```bash
 # Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows use venv\Scripts\activate
+source venv/bin/activate
 
 # Install Flask and pg8000 for database connection
 pip install flask pg8000
